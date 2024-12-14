@@ -1,12 +1,12 @@
-// import { configureStore } from '@reduxjs/toolkit';
-// import {cartReducer} from './cartSlice';
+import { configureStore } from '@reduxjs/toolkit';
+import {examReducer} from './ExamSlice';
 
-// const rootReducer = {
-//     cart: cartReducer
-// };
+const rootReducer = {
+    examUser: examReducer
+};
 
-// const store = configureStore({
-//     reducer: rootReducer
-// });
+const store = configureStore({
+    reducer: rootReducer
+});
 
-// export default store;
+export default store;
